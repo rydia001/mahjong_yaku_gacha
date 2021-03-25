@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@types/gh-pages": "^3.0.0",
+    "gh-pages": "^3.1.0"
+  },
+  "name": "js",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "CP-Chan",
+  "license": "MIT",
+  "homepage": "https://rydia001.github.io/mahjong_yaku_gacha/",
+  "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+      "clean": "rimraf dist/*",
+      "tsc": "tsc",
+      "build": "npm-run-all clean tsc",
+      "start": "node ."
+  },
+  "devDependencies": {
+    "@types/node": "^12.20.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.7.1",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "keywords": [],
+  "description": ""
+}
